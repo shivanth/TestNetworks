@@ -1,0 +1,18 @@
+sructures :
+	 struct in_addr{
+	 liong int s_addr;
+	 contains a long value for he ip address
+	 }
+struc hostent{
+      char* h_name;//host name
+      char ** h_aliases;//other host names
+      int h_addrtype; mostly AF_INET
+      int h_length;length of structure
+      char ** h_addr_list;ip addresses of each alias or interface
+      char * h_addr; simila to h_addr_lis[0]
+}
+struct sockaddr{
+       u_char sa_len;
+       u_short sa_family;
+       char sa_data[14];
+}
